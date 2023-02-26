@@ -1,0 +1,33 @@
+<p-dialog header="Изменить {{event?.title}}" [style]="{width: '50vw'}" [(visible)]="display" [modal]="true">
+  <div class="grid mt-3" [formGroup]="form">
+    <div class="col-12 md:col-10 field">
+      <label>События</label>
+      <input type="text" formControlName="title" class="inputfield w-full width-100" pInputText />
+    </div>
+
+    <div class="col-12 md:col-6 flex flex-column">
+      <label>Начало</label>
+      <input formControlName="start" type="datetime-local" pInputText/>
+    </div>
+
+    <div class=" col-12 md:col-6 flex flex-column">
+      <label>Окончание</label>
+      <input formControlName="end" type="datetime-local" pInputText/>
+    </div>
+
+    <div class="flex flex-column">
+      <div class="field col-12 md:col-2 flex flex-row ">
+        <p-checkbox [binary]="true" formControlName="regularly" (click)="regularly = !regularly"></p-checkbox>
+        <label class="ml-2">Регулярно</label>
+      </div>
+    </div>
+
+
+
+    <div class="col-12 flex justify-content-end mt-4">
+      <button pButton type="button" label="Сохранить" (click)="updateEvent()" class="p-button-sm"></button>
+      <button pButton type="button" (click)="deleteEvent()" label="Удалить" class="ml-1 p-button-danger p-button-sm"></button>
+    </div>
+  </div>
+
+</p-dialog>

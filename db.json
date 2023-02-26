@@ -1,0 +1,84 @@
+{
+  "events": [
+    {
+      "id": 40,
+      "title": "asdasd",
+      "start": "2023-02-23T03:00:00.000Z",
+      "end": "2023-02-23T05:30:00.000Z",
+      "backgroundColor": "rgb(253,241,186)",
+      "borderColor": "rgb(236,205,69)",
+      "textColor": "black",
+      "regularly": false
+    },
+    {
+      "id": 16,
+      "title": "21eqweqw",
+      "start": "2023-02-22T03:00:00.000Z",
+      "end": "2023-02-22T05:30:00.000Z",
+      "regularly": true,
+      "backgroundColor": "rgba(246, 246, 246, 0.8)",
+      "borderColor": "rgba(135, 133, 134, 0.8)",
+      "textColor": "black"
+    },
+    {
+      "id": 20,
+      "title": "sad",
+      "start": "2023-02-24T03:00:00.000Z",
+      "end": "2023-02-24T05:30:00.000Z",
+      "backgroundColor": "rgba(246, 246, 246, 0.8)",
+      "borderColor": "rgba(135, 133, 134, 0.8)",
+      "textColor": "black",
+      "regularly": true
+    },
+    {
+      "id": 56,
+      "title": "Allday",
+      "start": "2023-02-24T06:00:00.000Z",
+      "end": "2023-02-24T08:30:00.000Z",
+      "backgroundColor": "rgba(246, 246, 246, 0.8)",
+      "borderColor": "rgba(135, 133, 134, 0.8)",
+      "textColor": "black",
+      "regularly": true
+    },
+    {
+      "id": 52,
+      "title": "oneDay",
+      "start": "2023-02-23T06:30:00.000Z",
+      "end": "2023-02-23T09:00:00.000Z",
+      "backgroundColor": "rgb(253,241,186)",
+      "borderColor": "rgb(236,205,69)",
+      "textColor": "black",
+      "allDay": false
+    },
+    {
+      "id": 80,
+      "title": "asd",
+      "start": "2023-02-21T03:00:00.000Z",
+      "end": "2023-02-21T05:30:00.000Z",
+      "backgroundColor": "rgba(246, 246, 246, 0.8)",
+      "borderColor": "rgba(135, 133, 134, 0.8)",
+      "textColor": "black",
+      "regularly": true
+    },
+    {
+      "id": 62,
+      "title": "event2",
+      "start": "2023-02-25T04:00:00",
+      "end": "2023-02-25T06:00:00",
+      "backgroundColor": "rgb(253,241,186)",
+      "borderColor": "rgb(236,205,69)",
+      "textColor": "black",
+      "regularly": false
+    },
+    {
+      "id": 21,
+      "title": "Event2",
+      "start": "2023-02-22T06:00:00.000Z",
+      "end": "2023-02-22T08:30:00.000Z",
+      "backgroundColor": "rgba(246, 246, 246, 0.8)",
+      "borderColor": "rgba(135, 133, 134, 0.8)",
+      "textColor": "black",
+      "regularly": true
+    }
+  ]
+}

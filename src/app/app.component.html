@@ -1,0 +1,7 @@
+<div class="p-5 mt-5">
+  <full-calendar [events]="this.appService.events" [options]='calendarOptions'></full-calendar>
+</div>
+
+
+<app-create-event (createdEvent)="getAllEvents()"></app-create-event>
+<app-update-event (deletedEvent)="getAllEvents()" (updatedEvent)="getAllEvents()"></app-update-event>

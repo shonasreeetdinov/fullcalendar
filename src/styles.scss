@@ -1,0 +1,11 @@
+@import "../node_modules/primeicons/primeicons.css";
+@import "../node_modules/primeflex/primeflex.scss";
+
+html,
+body,
+body > * { /* the app-root */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
