@@ -61,15 +61,36 @@ export class AppComponent implements OnInit{
   }
 
   eventResize(info:any) {
-    let data = {
-      id: info.event.id,
-      title: info.event.title,
-      start: info.event._instance.range.start.toISOString(),
-      end: info.event._instance.range.end.toISOString(),
+    if(info.event._def.extendedProps.regularly === true) {
+      let data = {
+        id: info.event.id,
+        title: info.event.title,
+        start: info.event._instance.range.start.toISOString(),
+        end: info.event._instance.range.end.toISOString(),
+        backgroundColor: "rgba(246, 246, 246, 0.8)",
+        borderColor: "rgba(135, 133, 134, 0.8)",
+        textColor: "black",
+        regularly: true,
+      }
+      this.appService.updateEvent(data.id,data).subscribe((res) => {
+        this.eventResizing.emit(res)
+      })
     }
-    this.appService.updateEvent(data.id,data).subscribe((res) => {
-      this.eventResizing.emit(res)
-    })
+    else {
+      let data = {
+        id: info.event.id,
+        title: info.event.title,
+        start: info.event._instance.range.start.toISOString(),
+        end: info.event._instance.range.end.toISOString(),
+        backgroundColor: "rgb(253,241,186)",
+        borderColor: "rgb(236,205,69)",
+        textColor: "black",
+        regularly: false,
+      }
+      this.appService.updateEvent(data.id,data).subscribe((res) => {
+        this.eventResizing.emit(res)
+      })
+    }
   }
 
   handleEventClick(clickInfo: EventClickArg) {

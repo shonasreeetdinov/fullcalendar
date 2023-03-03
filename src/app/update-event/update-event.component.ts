@@ -40,7 +40,6 @@ export class UpdateEventComponent implements OnInit{
 
 
   updateEvent() {
-    console.log(this.form.value.start)
     if(this.form.value.regularly === true) {
       let data = {
         id: this.event._def.publicId,
